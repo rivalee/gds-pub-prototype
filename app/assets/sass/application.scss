@@ -272,18 +272,21 @@ display: block;
 }
 
 .updates {
-  float: left;
-  width: 20%;
+  @include grid-column( 1/6 );
 }
 
 .changelog {
-  float: left;
-  width: 75%;
+  @include grid-column( 5/6 );
+
   .datetime {
-    clear: both;
-    float: left;
-    width: 24.55%
+    @include grid-column( 1/5 );
+
   }
+  .changes {
+    @include grid-column( 4/5 );
+    font-size: 16px;
+  }
+
   .morebutton {
     clear: both;
     float: left;
@@ -291,11 +294,7 @@ display: block;
     padding-top: 10px;
     border-bottom: 1px solid $grey-2;
   }
-  .changes {
-    font-size: 16px;
-    float: left;
-    width: 60%;
-  }
+
 }
 
 .changelog-two {
@@ -326,28 +325,28 @@ display: block;
 }
 
 
-@include media(tablet) {
-  .updates {
-    font-size: 19px;
-    float: left;
-    height: 100%;
-    width: 15%;
-  }
-
-  .datetime {
-    font-size: 19px !important;
-    font-weight: bold;
-    float: left;
-    width: 33%;
-
-
-  }
-
-  .changes {
-    float: left;
-    width: 33%;
-  }
-}
+//@include media(tablet) {
+//  .updates {
+//    font-size: 19px;
+//    float: left;
+//    height: 100%;
+//    width: 15%;
+//  }
+//
+//  .datetime {
+//    font-size: 19px !important;
+//    font-weight: bold;
+//    float: left;
+//    width: 33%;
+//
+//
+//  }
+//
+//  .changes {
+//    float: left;
+//    width: 33%;
+//  }
+//}
 
 .docuprice {
   font-size: 14px;
@@ -493,14 +492,12 @@ nav li:before {
   clear: both;
 }
 
-.pub-dept {
-  float: left;
-  width: 33.333%;
+.part-of {
+  @include grid-column( 2/3 )
 }
 
-.pub-from {
-  float: left;
-  width: 66.666%;
+.department {
+  @include grid-column( 1/3 )
 }
 
 
