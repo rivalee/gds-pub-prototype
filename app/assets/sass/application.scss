@@ -114,9 +114,14 @@
   margin-bottom: 30px;
 }
 
+.detail-block p {
+  font-size: 16px;
+}
+
 .detail-block h2 {
-  font-size: 27px;
+  font-size: 19px;
   font-weight: bold;
+  margin-top: -10px;
   margin-bottom: 40px;
 }
 
@@ -285,6 +290,7 @@ display: block;
   .changes {
     @include grid-column( 4/5 );
     font-size: 16px;
+    margin-top: -9px;
   }
 
   .morebutton {
@@ -316,37 +322,17 @@ display: block;
 
 }
 
-.changes p {
-  font-size: 19px;
-}
 
 .changes a {
   text-decoration: none;
 }
 
+.datetime {
+  margin-top: -11px;
+  font-size: 19px;
+  font-weight: bold;
+}
 
-//@include media(tablet) {
-//  .updates {
-//    font-size: 19px;
-//    float: left;
-//    height: 100%;
-//    width: 15%;
-//  }
-//
-//  .datetime {
-//    font-size: 19px !important;
-//    font-weight: bold;
-//    float: left;
-//    width: 33%;
-//
-//
-//  }
-//
-//  .changes {
-//    float: left;
-//    width: 33%;
-//  }
-//}
 
 .docuprice {
   font-size: 14px;
